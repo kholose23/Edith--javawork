@@ -1,0 +1,25 @@
+package Methodref;
+
+
+public class Test {
+	public static void main(String[] args) {
+		School sch=new School();
+		Noteable nt=sh::noteLecture;
+		nt.note("note");
+		
+		
+		Noteable nt1=sch::noteObservation;
+		nt1.note(null);
+		Noteable nt2=sch::noteOnlineClass;
+		nt1.note(null);
+		
+		School mySchool=new School();
+		mySchool.notLecture("lecture");
+		mySchool.noteObservation("lecture");
+		mySchool.noteOnlineClass("lecture");		
+	}		
+				
+}
+	
+
+

@@ -1,0 +1,19 @@
+package javalogin;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+public class Test {
+public static void main(String[] args) {
+	LogException logObj=new LogException();
+	Logger log=Logger.getLogger("");
+	try {
+		log.logObj(Level.WARNING),"Edith Div by Zero);"
+				+ "
+	}
+	
+			
+		
+
+	}
+
+}

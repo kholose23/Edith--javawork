@@ -1,0 +1,10 @@
+package UserdefinedEXp;
+
+public class InvalidAgeExeption extends Exception{
+	public void InvalidAgeException(String msg) {
+		super(msg);
+	}
+	public InvalidAgeException() {}
+
+}
+

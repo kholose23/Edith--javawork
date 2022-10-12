@@ -1,0 +1,5 @@
+package javalogin;
+
+public class LoginException {
+
+}

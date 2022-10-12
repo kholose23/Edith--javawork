@@ -1,0 +1,12 @@
+package Myenum2;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Colors myColors=Colors.GREEN;
+		System.out.println(myColour);
+		AssignmentStatus aObj=AssignmentStatus.
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package seralisation;
+
+import java.io.ObjectOutputStream;
+import java.io.FileNotFoundException;
+import java. io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+public class Test {
+	Product pro=new Product(1000,"TV",1000,"Apple");
+
+	public static void main(String[] args) {
+		FileOutputStream fileOut=new FileOutputStream("object.txt");
+		//to convert object into stream of bytes
+		ObjectOutputStream Out=new ObjectOutputStream(fileOut);
+		//write into the file
+		oOut.writeObject(prod);
+		
+		FileInputStream fileIn=new FileInputStream("object.txt");
+		//convert bytes to Object
+		ObjectInputStream oIn=new ObjectInputStream(fileIn);
+		Product ProdCopy=(Product)oIn.readObject();
+		System.out.println(prodCopy.prodId);
+		System.out.println(prodCopy)
+
+	}
+
+}

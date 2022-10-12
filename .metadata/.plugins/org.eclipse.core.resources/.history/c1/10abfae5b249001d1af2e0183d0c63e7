@@ -1,0 +1,21 @@
+package JavaLogger;
+
+import java.10.FileReader;
+
+public class LoginException {
+	int info;
+	public void divByZero()
+	{
+		System.out.println(10/0);
+	}
+	public void arrayBound()
+	{
+		int[] x=new int[5];
+		System.out.println(x[6]);
+	}
+	public void fileNotfound() throws Exception
+	{
+		FileReader fr=new FileReader("Upasana.txt");
+	}
+
+}
