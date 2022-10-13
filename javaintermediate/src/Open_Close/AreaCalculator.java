@@ -1,5 +1,7 @@
 package Open_Close;
 
-public interface AreaCalculator {
-
+public class AreaCalculator {
+    public double calculateShapeArea(Shape shape) {
+        return shape.calculateArea();
+    }
 }

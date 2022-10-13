@@ -1,37 +1,42 @@
 package Collections;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class IteratorExample {
-	List<String> list=new ArrayList(4);
-    list.add("Upasana");
-    list.add("Upasana");
-    list.add("Rahul");
-    list.add("Simran");
-    System.out.println(list);        
-    Iterator<String> itr=list.iterator();
-    while(itr.hasNext())
-    {
-        System.out.println(itr.next()); 
-        
-        String name;
-        int price;
-        int quantity;
-        String brand;
-        public Product(String name, int price, int quantity, String brand) {
-            super();
-            this.name = name;
-            this.price = price;
-            this.quantity = quantity;
-            this.brand = brand;
-        }
-        public Product() {
-            super();
-        }
-        @Override
-        public String toString() {
-            return "Product [name=" + name + ", price=" + price + ", quantity=" + quantity + ", brand=" + brand + "]";
-        }
-        
-      //System.out.println(prodItr.next().name+"--"+prodItr.next().price+"--"+prodItr.next().brand+"--"+prodItr.next().quantity);            
-    }
-    }
+	public static void main(String[] args) {
+		List<String> list=new ArrayList(4);
+		list.add("Edith");
+		list.add("Hilda");
+		list.add("Glenda");
+		list.add("Brett");
+		System.out.println(list);		
+		Iterator<String> itr=list.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());			
+		}
+		List<Product> prodList=new ArrayList();
+		Product prod1=new Product("Bluetooth",50,10,"Boat");		
+		Product prod2=new Product("TV",1000,5,"Apple");		
+		Product prod3=new Product("Camera",500,8,"Sony");		
+		Product prod4=new Product("Tripod",70,15,"Digitech");
+		Product prod5=new Product("Camera",500,8,"Sony");		
+		Product prod6=new Product("Tripod",70,15,"Digitech");
+		prodList.add(prod1);
+		prodList.add(prod2);
+		prodList.add(prod3);
+		prodList.add(prod4);
+		prodList.add(prod5);
+		prodList.add(prod6);
+		Iterator<Product> prodItr=prodList.iterator();
+		while(prodItr.hasNext())
+		{
+			System.out.println(prodItr.next());	
+		}
+		
+		
+	}
+
 }

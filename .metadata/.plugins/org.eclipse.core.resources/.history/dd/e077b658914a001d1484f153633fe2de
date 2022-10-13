@@ -1,0 +1,5 @@
+package liskovfolder;
+
+public class Animal {
+
+}

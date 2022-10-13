@@ -1,9 +1,9 @@
 package Open_Close;
 
-public class Rectangle {
-	private double length;
+public class Rectangle implements Shape {
+    private double length;
     private double width;
-	
+
     public double calculateArea() {
         return length * width;
     }
@@ -22,7 +22,5 @@ public class Rectangle {
 
     public void setWidth(double width) {
         this.width = width;
-
-}
-    
+    }
 }

@@ -1,4 +1,4 @@
-package liskovFolder;
+package liskovfolder;
 
 public class Bird {
 

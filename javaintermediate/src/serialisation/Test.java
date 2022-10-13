@@ -1,6 +1,7 @@
 package serialisation;
 
 import java.io.ObjectOutputStream;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java. io.FileOutputStream;
 import java.io.ObjectInputStream;
@@ -16,16 +17,16 @@ public class Test {
 		//to convert object into stream of bytes
 		ObjectOutputStream Out=new ObjectOutputStream(fileOut);
 		//write into the file
-		oOut.writeObject(prod);
+		Out.writeObject(prod);
 		
 		FileInputStream fileIn=new FileInputStream("object.txt");
 		//convert bytes to Object
 		ObjectInputStream oIn=new ObjectInputStream(fileIn);
 		Product ProdCopy=(Product)oIn.readObject();
-		System.out.println(prodCopy.prodId);
-		System.out.println(prodCopy.name);
-		System.out.println(prodCopy.brand);
-		System.out.println(prodCopy.price);
+		System.out.println(ProdCopy.prodId);
+		System.out.println(ProdCopy.name);
+		System.out.println(ProdCopy.brand);
+		System.out.println(ProdCopy.price);
 		
 	}catch (Exception e) {
 		//TODO Auto-generated catch block

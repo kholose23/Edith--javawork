@@ -5,12 +5,14 @@ public class TestShape {
 		Circle C=new Circle ();
 		C.setRadius (23.00);
 		Rectangle r=new Rectangle();
-		r.setlength(10.00);
+		r.setLength(10.00);
+		r.setWidth(20);
 		
+		AreaCalculator ac=new AreaCalculator();
+		System.out.println(ac.calculateShapeArea(r));
+		System.out.println(ac.calculateShapeArea(r));
 		
-				
-	}
+			}
 	
-
 
 }

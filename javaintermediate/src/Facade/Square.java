@@ -1,5 +1,15 @@
-package Facade;
+package facade;
 
-public class Square {
+public class Square implements Shape {
 
-}
+
+
+    @Override
+
+    public void draw() {
+
+       System.out.println("Square::draw()");
+
+    }
+
+ }
