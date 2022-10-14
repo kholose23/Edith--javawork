@@ -1,8 +1,0 @@
-package streams;
-
-public int prodId;
-public String name;
-public float price;
-public int quantity;
-public String brand;
-public float deliveryCharges;

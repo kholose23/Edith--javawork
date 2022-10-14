@@ -1,7 +1,0 @@
-package Lambda;
-
-public interface Doable {
-	public void greet();
-	
-
-}

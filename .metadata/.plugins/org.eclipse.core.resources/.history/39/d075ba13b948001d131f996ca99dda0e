@@ -1,8 +1,0 @@
-package myenum;
-
-public enum colors {
-	RED,
-	BLUE,
-	GREEN
-}
-

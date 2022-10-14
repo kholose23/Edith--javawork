@@ -1,6 +1,0 @@
-package Lambda;
-
-public interface GreetingWithReturns {
-	public String greet(String name);
-
-}

@@ -1,6 +1,0 @@
-package Lambda;
-@FuntionalInterface
-public interface GreetingWithName {
-	public void greet(String name)
-
-}
